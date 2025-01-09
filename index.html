@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SessionStorage</title>
+</head>
+
+<body>
+    <script>
+        // Exercice 2 : SessionStorage
+
+        // 2- Utilisez le sessionStorage pour stocker et récupérer une valeur simple (par exemple, un nombre).
+        // -------Declaration du nombre
+        const nbr = 13;
+        //--------Utilisation du SessionStorage pour stocker le nombre
+        sessionStorage.setItem('nombre', nbr);
+
+        // Affichez cette valeur dans la console.
+        //--------recuperation du nombre dans le SessionStorage
+        const recupsession = sessionStorage.getItem('nombre');
+        // --------Affichage du nombre dans la console
+        if(recupsession) {
+            console.log(recupsession);
+        }
+    </script>
+</body>
+
+</html>
