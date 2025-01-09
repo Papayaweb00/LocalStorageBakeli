@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs</title>
+</head>
+
+<body>
+
+    <script>
+        (async function() {
+            const url = 'https://jsonplaceholder.typicode.com/users';
+            const urlfet = await fetch(url);
+            const user = await urlfet.json();
+
+            console.log(user);
+        })()
+    </script>
+</body>
+
+</html>
