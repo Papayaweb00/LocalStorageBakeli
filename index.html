@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmation Oriente Objet(POO)</title>
+</head>
+
+<body>
+    <h1 id="h">Inconnu</h1>
+    <script>
+        const h1 = document.querySelector('#h');
+        // Exercice 2 : POO
+
+        // 2- Créez une classe "Personne" avec les propriétés suivantes : nom, prénom, âge. 
+        class personne {
+            constructor(nom, prenom, age) {
+                this.nom = nom;
+                this.prenom = prenom;
+                this.age = age;
+            }
+
+            // Ajoutez une méthode pour afficher les informations de la personne. 
+            salutation() {
+                h1.textContent = `Bonjour ${this.nom} ${this.prenom}. Vous avez ${this.age} ans`;
+            }
+        }
+        // Créez ensuite une instance de cette classe et 
+        const personnel = new personne('Papa', 'Yaffa', 20)
+
+        // appelez la méthode d'affichage.
+        personnel.salutation();
+    </script>
+</body>
+
+</html>
